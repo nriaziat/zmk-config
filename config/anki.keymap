@@ -5,9 +5,10 @@
     combos {
         compatible = "zmk,combos";
 
-        bury {
-            bindings = <&kp MINUS>;
-            key-positions = <0 1>;
+        undo {
+            bindings = <&kp U>;
+            key-positions = <1 2>;
+            layers = <0>;
         };
     };
 
@@ -16,7 +17,7 @@
 
         layer_0 {
             bindings = <
-&kp SPACE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4
+&kp NUMBER_1  &kp SPACE  &kp NUMBER_3  &kp NUMBER_4  &kp H
             >;
         };
     };
