@@ -1,11 +1,23 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        undo {
+            bindings = <&kp U>;
+            key-positions = <1 0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer { // Layer 0
+        default_layer {
             bindings = <
-              &kp SPACE  &kp NUMBER_1  &kp H  &kp NUMBER_4  &kp NUMBER_2
+&kp SPACE  &kp NUMBER_1  &kp H  &kp NUMBER_4  &kp NUMBER_2
             >;
         };
     };
- };
+};
