@@ -1,0 +1,11 @@
+file_format: "1"
+id: anki
+name: Anki
+type: shield
+url: https://github.com/nriaziat/anki-shield/
+requires: [pro_micro]
+exposes: 
+features:
+  - keys
+siblings:
+

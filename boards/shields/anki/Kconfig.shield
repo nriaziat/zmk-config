@@ -1,0 +1,4 @@
+# No whitespace after the comma or in your keyboard name!
+config SHIELD_ANKI
+    def_bool $(shields_list_contains,anki)
+
