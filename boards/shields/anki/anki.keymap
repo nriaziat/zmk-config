@@ -4,7 +4,7 @@
 
         default_layer { // Layer 0
             bindings = <
-              &kp NUMBER_1  &kp SPACE  &kp NUMBER_3  &kp NUMBER_4  &kp H
+              &kp SPACE  &kp NUMBER_1  &kp H  &kp NUMBER_4  &kp U
             >;
         };
     };
