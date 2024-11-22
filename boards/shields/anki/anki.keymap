@@ -20,7 +20,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <1000>;
             flavor = "hold-preferred";
-            hold-trigger-key-positions = <4>;
         };
     };
 
@@ -29,7 +28,7 @@
 
         default_layer {
             bindings = <
-&kp SPACE  &kp NUMBER_1  &kp N  &kp NUMBER_4  &kp NUMBER_2
+&kp SPACE  &kp NUMBER_1  &kp N  &kp NUMBER_4  &bootloader_mode 0 NUMBER_2
             >;
         };
     };
