@@ -9,10 +9,18 @@
             bindings = <&kp U>;
             key-positions = <1 0>;
         };
+    };
 
-        reset_bootloader {
-            bindings = <&bootloader>;
-            key-positions = <0 1 2 3 4>;
+    behaviors {
+        bootloader_mode: bootloader_mode {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BOOTLOADER_MODE";
+            bindings = <&bootloader>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <1000>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <4>;
         };
     };
 
