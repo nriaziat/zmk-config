@@ -9,6 +9,11 @@
             bindings = <&kp U>;
             key-positions = <1 0>;
         };
+
+        reset_bootloader {
+            bindings = <&bootloader>;
+            key-positions = <0 1 2 3 4>;
+        };
     };
 
     keymap {
