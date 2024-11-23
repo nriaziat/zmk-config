@@ -9,11 +9,6 @@
             bindings = <&kp U>;
             key-positions = <1 0>;
         };
-
-        soft_off {
-            bindings = <&soft_off>;
-            key-positions = <0 1 2 3>;
-        };
     };
 
     behaviors {
@@ -27,21 +22,12 @@
             flavor = "hold-preferred";
         };
 
-        up_arrow_or_space: up_arrow_or_space {
-            compatible = "zmk,behavior-tap-dance";
-            label = "UP_ARROW_OR_SPACE";
-            #binding-cells = <0>;
-            bindings = <&kp SPACE>, <&kp UP_ARROW>;
+        hold_tap_letters: hold_tap_letters {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_LETTERS";
+            bindings = <&kp>, <&kp>;
 
-            tapping-term-ms = <500>;
-        };
-
-        down_arrow_or_one: down_arrow_or_one {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DOWN_ARROW_OR_ONE";
-            #binding-cells = <0>;
-            bindings = <&kp NUMBER_1>, <&kp DOWN_ARROW>;
-
+            #binding-cells = <2>;
             tapping-term-ms = <500>;
         };
     };
@@ -51,7 +37,7 @@
 
         default_layer {
             bindings = <
-&up_arrow_or_space  &down_arrow_or_one  &kp N  &kp NUMBER_4  &bootloader_mode 0 NUMBER_2
+&hold_tap_letters NUMBER_4 SPACE  &hold_tap_letters NUMBER_2 NUMBER_1  &kp N  &kp DOWN  &bootloader_mode 0 NUMBER_2
             >;
         };
     };
