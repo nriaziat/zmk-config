@@ -31,4 +31,8 @@
             , <&gpio0 24 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             ;
     };
+	 soft_off_wakers {
+        compatible = "zmk,soft-off-wakeup-sources";
+        wakeup-sources = <&kscan0>;
+    };
 };
