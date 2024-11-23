@@ -37,7 +37,7 @@
 
         default_layer {
             bindings = <
-&hold_tap_letters NUMBER_4 SPACE  &hold_tap_letters NUMBER_2 NUMBER_1  &kp N  &kp DOWN  &bootloader_mode 0 NUMBER_2
+&hold_tap_letters NUMBER_4 SPACE  &hold_tap_letters NUMBER_2 NUMBER_1  &kp N  &kp DOWN  &bootloader_mode 0 UP_ARROW
             >;
         };
     };
