@@ -32,9 +32,9 @@
             tapping-term-ms = <500>;
         };
 
-        bt_Switch: bt_Switch {
+        switch_bt: switch_bt {
             compatible = "zmk,behavior-hold-tap";
-            label = "BT_SWITCH";
+            label = "SWITCH_BT";
             bindings = <&bt>, <&kp>;
 
             #binding-cells = <2>;
@@ -48,7 +48,7 @@
 
         default_layer {
             bindings = <
-&hold_tap_letters NUMBER_4 SPACE  &hold_tap_letters NUMBER_2 NUMBER_1  &kp N  &bt_Switch BT_NXT DOWN_ARROW  &bootloader_mode 0 UP_ARROW
+&hold_tap_letters NUMBER_4 SPACE  &hold_tap_letters NUMBER_2 NUMBER_1  &kp N  &switch_bt BT_NXT DOWN_ARROW  &bootloader_mode 0 UP_ARROW
             >;
         };
     };
